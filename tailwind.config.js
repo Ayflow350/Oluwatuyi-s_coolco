@@ -7,12 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "source-serif": ["Source Serif Pro", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        heroBG1: "url('/gradient2.svg')",
+        heroBG2: "url('/gradient.png')",
+      },
+      colors: {
+        white: "#ffff",
+        darkblue: "#0D0C22",
+        darkgray: "#858585",
+        dark: "#101828",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1200px",
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
