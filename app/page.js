@@ -14,7 +14,7 @@ import Footer from "@/components/Footer.jsx";
 export default function Home() {
   return (
     <div className="overflow-hidden ">
-      <div className="bg-heroBG1 lg:bg-heroBG2  bg-clip-border bg-no-repeat lg:h-[729px] h-[830px]">
+      <div className="bg-heroBG2 lg:bg-heroBG1 bg-cover bg-clip-border bg-no-repeat lg:h-[729px] h-[830px]">
         <Header />
         <Hero />
       </div>
